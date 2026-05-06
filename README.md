@@ -181,7 +181,7 @@ Content-Type: application/json
 
 ---
 
-## HypeFresh Category Mapping
+## Category Mapping
 
 | Category | Style Module | Schema | Social Priority |
 |----------|-------------|--------|-----------------|
