@@ -1,0 +1,63 @@
+{
+  "quality_gates": {
+    "minimum_score": 75,
+    "excellent_score": 90,
+    "publish_ready": 85,
+    "dimensions": {
+      "factual_accuracy": {
+        "weight": 0.25,
+        "min": 80
+      },
+      "style_adherence": {
+        "weight": 0.2,
+        "min": 75
+      },
+      "seo_optimization": {
+        "weight": 0.2,
+        "min": 80
+      },
+      "social_optimization": {
+        "weight": 0.15,
+        "min": 70
+      },
+      "readability": {
+        "weight": 0.1,
+        "min": 70
+      },
+      "engagement_potential": {
+        "weight": 0.1,
+        "min": 75
+      }
+    }
+  },
+  "competitor_analysis": {
+    "top_n": 3,
+    "serp_check_depth": 10,
+    "content_age_threshold_days": 30,
+    "backlog_check_months": 6,
+    "social_engagement_min": 100
+  },
+  "content_generation": {
+    "max_retries": 3,
+    "self_correction_max_loops": 2,
+    "temperature_range": {
+      "min": 0.3,
+      "max": 0.7
+    },
+    "hallucination_check": true,
+    "quote_verification": true
+  },
+  "publishing": {
+    "auto_publish_threshold": 90,
+    "review_required_threshold": 75,
+    "human_approval_required": false,
+    "wordpress_sync_delay_ms": 5000,
+    "social_publish_delay_ms": 300000
+  },
+  "monitoring": {
+    "rank_check_interval_hours": 6,
+    "social_mention_scan_interval_minutes": 15,
+    "competitor_content_watch": true,
+    "alert_on_rank_drop": 3
+  }
+}

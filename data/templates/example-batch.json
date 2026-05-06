@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Kendrick Lamar new album surprise drop",
+    "options": {
+      "category": "music-releases",
+      "style": "hip-hop-urban",
+      "keywords": ["kendrick", "gnx", "album"]
+    }
+  },
+  {
+    "title": "Drake net worth 2024",
+    "options": {
+      "category": "net-worth",
+      "style": "net-worth-financial",
+      "keywords": ["drake", "fortune", "forbes"]
+    }
+  },
+  {
+    "title": "celebrity couple breakup viral video",
+    "options": {
+      "category": "viral-moments",
+      "style": "viral-breaking",
+      "keywords": ["breakup", "viral", "tiktok"]
+    }
+  }
+]
