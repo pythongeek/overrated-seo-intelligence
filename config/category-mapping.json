@@ -1,0 +1,289 @@
+{
+  "hypefresh_categories": {
+    "exclusive-interviews": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/exclusive/",
+      "social_priority": [
+        "instagram",
+        "youtube"
+      ],
+      "content_flags": [
+        "exclusive_badge",
+        "behind_the_scenes"
+      ],
+      "seo_template": "exclusive-interview-template"
+    },
+    "net-worth": {
+      "style_module": "net-worth-financial",
+      "schema_type": "Article",
+      "internal_link_target": "/net-worth/",
+      "social_priority": [
+        "instagram",
+        "twitter",
+        "tiktok"
+      ],
+      "content_flags": [
+        "number_highlight",
+        "wealth_breakdown"
+      ],
+      "seo_template": "net-worth-template"
+    },
+    "viral-moments": {
+      "style_module": "viral-breaking",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/viral/",
+      "social_priority": [
+        "tiktok",
+        "twitter",
+        "instagram"
+      ],
+      "content_flags": [
+        "breaking_banner",
+        "video_embed"
+      ],
+      "seo_template": "viral-moment-template"
+    },
+    "hip-hop": {
+      "style_module": "hip-hop-urban",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/hip-hop/",
+      "social_priority": [
+        "twitter",
+        "instagram",
+        "tiktok"
+      ],
+      "content_flags": [
+        "cultural_context",
+        "artist_quote"
+      ],
+      "seo_template": "hip-hop-template"
+    },
+    "scandal": {
+      "style_module": "scandal-drama",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/scandal/",
+      "social_priority": [
+        "twitter",
+        "instagram"
+      ],
+      "content_flags": [
+        "document_reference",
+        "timeline"
+      ],
+      "seo_template": "scandal-template"
+    },
+    "breaking-news": {
+      "style_module": "viral-breaking",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/breaking/",
+      "social_priority": [
+        "twitter",
+        "instagram",
+        "tiktok"
+      ],
+      "content_flags": [
+        "breaking_banner",
+        "live_update"
+      ],
+      "seo_template": "breaking-news-template"
+    },
+    "celebrity-relationships": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/relationships/",
+      "social_priority": [
+        "instagram",
+        "twitter"
+      ],
+      "content_flags": [
+        "relationship_timeline",
+        "social_reactions"
+      ],
+      "seo_template": "relationship-template"
+    },
+    "music-releases": {
+      "style_module": "hip-hop-urban",
+      "schema_type": "MusicRecording",
+      "internal_link_target": "/music/",
+      "social_priority": [
+        "tiktok",
+        "instagram",
+        "twitter"
+      ],
+      "content_flags": [
+        "stream_embed",
+        "lyric_highlight"
+      ],
+      "seo_template": "music-release-template"
+    },
+    "red-carpet": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/red-carpet/",
+      "social_priority": [
+        "instagram",
+        "tiktok"
+      ],
+      "content_flags": [
+        "gallery_embed",
+        "fashion_credit"
+      ],
+      "seo_template": "red-carpet-template"
+    },
+    "social-media-drama": {
+      "style_module": "social-viral",
+      "schema_type": "SocialMediaPosting",
+      "internal_link_target": "/social-drama/",
+      "social_priority": [
+        "twitter",
+        "tiktok",
+        "instagram"
+      ],
+      "content_flags": [
+        "screenshot_embed",
+        "thread_summary"
+      ],
+      "seo_template": "social-drama-template"
+    },
+    "legal-battles": {
+      "style_module": "scandal-drama",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/legal/",
+      "social_priority": [
+        "twitter",
+        "youtube"
+      ],
+      "content_flags": [
+        "court_document",
+        "legal_expert_quote"
+      ],
+      "seo_template": "legal-template"
+    },
+    "fashion": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/fashion/",
+      "social_priority": [
+        "instagram",
+        "pinterest",
+        "tiktok"
+      ],
+      "content_flags": [
+        "designer_credit",
+        "purchase_link"
+      ],
+      "seo_template": "fashion-template"
+    },
+    "sports-entertainment": {
+      "style_module": "hip-hop-urban",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/sports-entertainment/",
+      "social_priority": [
+        "twitter",
+        "instagram",
+        "tiktok"
+      ],
+      "content_flags": [
+        "stat_highlight",
+        "crossover_angle"
+      ],
+      "seo_template": "sports-entertainment-template"
+    },
+    "tech-influencers": {
+      "style_module": "net-worth-financial",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/tech/",
+      "social_priority": [
+        "twitter",
+        "youtube",
+        "tiktok"
+      ],
+      "content_flags": [
+        "product_embed",
+        "valuation_number"
+      ],
+      "seo_template": "tech-influencer-template"
+    },
+    "reality-tv": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/reality-tv/",
+      "social_priority": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "content_flags": [
+        "clip_embed",
+        "cast_reaction"
+      ],
+      "seo_template": "reality-tv-template"
+    },
+    "award-shows": {
+      "style_module": "celebrity-entertainment",
+      "schema_type": "Event",
+      "internal_link_target": "/awards/",
+      "social_priority": [
+        "twitter",
+        "instagram",
+        "tiktok"
+      ],
+      "content_flags": [
+        "winner_highlight",
+        "speech_quote",
+        "red_carpet_gallery"
+      ],
+      "seo_template": "award-show-template"
+    },
+    "death-obituary": {
+      "style_module": "scandal-drama",
+      "schema_type": "NewsArticle",
+      "internal_link_target": "/obituary/",
+      "social_priority": [
+        "twitter",
+        "facebook"
+      ],
+      "content_flags": [
+        "tribute_format",
+        "career_retrospective",
+        "cause_verified"
+      ],
+      "seo_template": "obituary-template"
+    }
+  },
+  "competitor_benchmarks": {
+    "tmz.com": {
+      "avg_word_count": 450,
+      "update_frequency": "real-time",
+      "social_velocity": "high",
+      "schema_richness": "medium",
+      "internal_linking_depth": 2,
+      "target_beat": "10% better on depth, 20% faster on publish"
+    },
+    "pagesix.com": {
+      "avg_word_count": 520,
+      "update_frequency": "hourly",
+      "social_velocity": "high",
+      "schema_richness": "low",
+      "internal_linking_depth": 1,
+      "target_beat": "Better schema, deeper sourcing"
+    },
+    "eonline.com": {
+      "avg_word_count": 680,
+      "update_frequency": "hourly",
+      "social_velocity": "medium",
+      "schema_richness": "high",
+      "internal_linking_depth": 3,
+      "target_beat": "Faster publish, more native social formats"
+    },
+    "complex.com": {
+      "avg_word_count": 900,
+      "update_frequency": "daily",
+      "social_velocity": "medium",
+      "schema_richness": "high",
+      "internal_linking_depth": 4,
+      "target_beat": "Better social optimization, faster breaking coverage"
+    }
+  }
+}

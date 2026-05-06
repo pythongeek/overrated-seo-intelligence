@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  seo-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: seo-intelligence-suite
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./seo-output:/app/seo-output
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+      - postgres
+    networks:
+      - seo-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/health', (r) => r.statusCode === 200 ? process.exit(0) : process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  redis:
+    image: redis:7-alpine
+    container_name: seo-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    networks:
+      - seo-network
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: seo-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: seo_user
+      POSTGRES_PASSWORD: seo_pass
+      POSTGRES_DB: seo_intelligence
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - seo-network
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: seo-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=change_me
+      - WEBHOOK_URL=http://localhost:5678/
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=seo_intelligence
+      - DB_POSTGRESDB_USER=seo_user
+      - DB_POSTGRESDB_PASSWORD=seo_pass
+    volumes:
+      - n8n-data:/home/node/.n8n
+    depends_on:
+      - postgres
+    networks:
+      - seo-network
+
+volumes:
+  redis-data:
+  postgres-data:
+  n8n-data:
+
+networks:
+  seo-network:
+    driver: bridge

@@ -1,0 +1,272 @@
+{
+  "hip-hop-urban": {
+    "id": "hip-hop-urban",
+    "name": "Hip-Hop & Urban",
+    "voice": "Raw, rhythmic, 'in the know'",
+    "word_count": {
+      "min": 400,
+      "max": 700,
+      "target": 550
+    },
+    "sentence_structure": {
+      "avg_length": 12,
+      "variance": "high",
+      "fragments_allowed": true,
+      "slang_density": 0.15
+    },
+    "tone_markers": [
+      "authentic",
+      "street-credible",
+      "cultural",
+      "unfiltered"
+    ],
+    "banned_phrases": [
+      "ever-evolving landscape",
+      "tapestry",
+      "delve",
+      "leveraging",
+      "in conclusion",
+      "furthermore"
+    ],
+    "required_elements": [
+      "cultural impact mention",
+      "street credibility signal",
+      "artist perspective"
+    ],
+    "hook_types": [
+      "pattern_interrupt",
+      "cultural_reference",
+      "controversy_tease"
+    ],
+    "readability_target": "Grade 8-10",
+    "social_hooks": {
+      "twitter": "Thread-ready with \ud83d\udd25 breaks",
+      "instagram": "Caption-first with visual cues",
+      "tiktok": "Sound-bite ready hooks"
+    }
+  },
+  "viral-breaking": {
+    "id": "viral-breaking",
+    "name": "Viral / Breaking News",
+    "voice": "Urgent, pyramid structure, relentless",
+    "word_count": {
+      "min": 300,
+      "max": 500,
+      "target": 400
+    },
+    "sentence_structure": {
+      "avg_length": 10,
+      "variance": "medium",
+      "fragments_allowed": true,
+      "rhetorical_questions": 0.2
+    },
+    "tone_markers": [
+      "urgent",
+      "breaking",
+      "exclusive",
+      "you-heard-it-first"
+    ],
+    "banned_phrases": [
+      "it is important to note",
+      "in today's world",
+      "as we all know",
+      "the fact that"
+    ],
+    "required_elements": [
+      "timestamp reference",
+      "source attribution",
+      "next-development tease"
+    ],
+    "hook_types": [
+      "breaking_banner",
+      "exclusive_badge",
+      "update_counter"
+    ],
+    "readability_target": "Grade 6-8",
+    "social_hooks": {
+      "twitter": "BREAKING prefix mandatory",
+      "instagram": "Story-format with countdown",
+      "tiktok": "Reaction-template ready"
+    }
+  },
+  "celebrity-entertainment": {
+    "id": "celebrity-entertainment",
+    "name": "Celebrity & Entertainment",
+    "voice": "Witty, fast-paced, human-element focused",
+    "word_count": {
+      "min": 500,
+      "max": 800,
+      "target": 650
+    },
+    "sentence_structure": {
+      "avg_length": 14,
+      "variance": "high",
+      "parenthetical_asides": 0.1,
+      "pop_culture_refs": 0.12
+    },
+    "tone_markers": [
+      "witty",
+      "observational",
+      "social-aware",
+      "relatable"
+    ],
+    "banned_phrases": [
+      "it goes without saying",
+      "needless to say",
+      "at the end of the day",
+      "literally"
+    ],
+    "required_elements": [
+      "human element",
+      "social reaction quote",
+      "career context",
+      "fan perspective"
+    ],
+    "hook_types": [
+      "behind_the_scenes",
+      "relationship_angle",
+      "transformation_story"
+    ],
+    "readability_target": "Grade 7-9",
+    "social_hooks": {
+      "twitter": "Quote-tweet bait",
+      "instagram": "Carousel-ready with drama arcs",
+      "tiktok": "Duet-friendly reaction setup"
+    }
+  },
+  "net-worth-financial": {
+    "id": "net-worth-financial",
+    "name": "Net Worth / Financial",
+    "voice": "Authoritative, data-driven, milestone-focused",
+    "word_count": {
+      "min": 800,
+      "max": 1200,
+      "target": 1000
+    },
+    "sentence_structure": {
+      "avg_length": 18,
+      "variance": "low",
+      "data_density": 0.25,
+      "citation_required": true
+    },
+    "tone_markers": [
+      "authoritative",
+      "precise",
+      "analytical",
+      "verified"
+    ],
+    "banned_phrases": [
+      "a lot of money",
+      "rich beyond belief",
+      "filthy rich",
+      "estimated to be around"
+    ],
+    "required_elements": [
+      "verified number",
+      "career milestone",
+      "revenue stream breakdown",
+      "comparison metric"
+    ],
+    "hook_types": [
+      "number_shock",
+      "rags_to_riches",
+      "wealth_breakdown"
+    ],
+    "readability_target": "Grade 10-12",
+    "social_hooks": {
+      "twitter": "Infographic thread format",
+      "instagram": "Wealth breakdown carousel",
+      "tiktok": "Number reveal countdown"
+    }
+  },
+  "scandal-drama": {
+    "id": "scandal-drama",
+    "name": "Scandal / Drama",
+    "voice": "Measured, factual, document-backed",
+    "word_count": {
+      "min": 600,
+      "max": 900,
+      "target": 750
+    },
+    "sentence_structure": {
+      "avg_length": 15,
+      "variance": "medium",
+      "legal_term_accuracy": true,
+      "allegation_framing": "accused of"
+    },
+    "tone_markers": [
+      "measured",
+      "document-backed",
+      "neutral",
+      "procedurally accurate"
+    ],
+    "banned_phrases": [
+      "allegedlysupposedly",
+      "apparently",
+      "some say"
+    ],
+    "required_elements": [
+      "court document reference",
+      "timeline",
+      "both sides presented",
+      "legal process status"
+    ],
+    "hook_types": [
+      "document_drop",
+      "timeline_reveal",
+      "legal_process_walkthrough"
+    ],
+    "readability_target": "Grade 9-11",
+    "social_hooks": {
+      "twitter": "Document thread with redactions",
+      "instagram": "Timeline carousel",
+      "tiktok": "Drama breakdown chapters"
+    }
+  },
+  "social-viral": {
+    "id": "social-viral",
+    "name": "Social Media Viral",
+    "voice": "Native-platform, algorithm-aware, share-optimized",
+    "word_count": {
+      "min": 200,
+      "max": 400,
+      "target": 300
+    },
+    "sentence_structure": {
+      "avg_length": 8,
+      "variance": "extreme",
+      "emoji_density": 0.08,
+      "hashtag_strategy": "branded + trending"
+    },
+    "tone_markers": [
+      "native",
+      "algorithm-aware",
+      "FYP-optimized",
+      "share-bait"
+    ],
+    "banned_phrases": [
+      "check out our website",
+      "click the link in bio",
+      "don't forget to subscribe"
+    ],
+    "required_elements": [
+      "platform-native format",
+      "engagement trigger",
+      "share incentive",
+      "comment bait"
+    ],
+    "hook_types": [
+      "pattern_interrupt",
+      "controversy_starter",
+      "relatable_rant",
+      "transformation"
+    ],
+    "readability_target": "Grade 5-7",
+    "social_hooks": {
+      "twitter": "Hot-take format with quote bait",
+      "instagram": "Reel-script with hook in 0-3s",
+      "tiktok": "Green-screen reaction ready",
+      "youtube_shorts": "Loop-ending format"
+    }
+  }
+}

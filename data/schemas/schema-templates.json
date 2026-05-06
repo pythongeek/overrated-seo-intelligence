@@ -1,0 +1,94 @@
+{
+  "NewsArticle": {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{title}}",
+    "description": "{{meta_description}}",
+    "image": "{{og_image}}",
+    "datePublished": "{{published_at}}",
+    "dateModified": "{{modified_at}}",
+    "author": {
+      "@type": "Organization",
+      "name": "HypeFresh",
+      "url": "https://hypefresh.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HypeFresh",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hypefresh.com/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{canonical_url}}"
+    },
+    "articleSection": "{{category}}",
+    "keywords": "{{keywords}}"
+  },
+  "Article": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "description": "{{meta_description}}",
+    "image": "{{og_image}}",
+    "datePublished": "{{published_at}}",
+    "author": {
+      "@type": "Organization",
+      "name": "HypeFresh"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HypeFresh"
+    }
+  },
+  "MusicRecording": {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    "name": "{{title}}",
+    "description": "{{meta_description}}",
+    "image": "{{og_image}}",
+    "datePublished": "{{published_at}}",
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "{{artist_name}}"
+    },
+    "inAlbum": {
+      "@type": "MusicAlbum",
+      "name": "{{album_name}}"
+    }
+  },
+  "Event": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{title}}",
+    "description": "{{meta_description}}",
+    "image": "{{og_image}}",
+    "startDate": "{{event_date}}",
+    "location": {
+      "@type": "Place",
+      "name": "{{venue}}",
+      "address": "{{venue_address}}"
+    },
+    "performer": {
+      "@type": "PerformingGroup",
+      "name": "{{performer}}"
+    }
+  },
+  "SocialMediaPosting": {
+    "@context": "https://schema.org",
+    "@type": "SocialMediaPosting",
+    "headline": "{{title}}",
+    "sharedContent": {
+      "@type": "WebPage",
+      "headline": "{{original_title}}",
+      "url": "{{original_url}}"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "HypeFresh"
+    },
+    "datePublished": "{{published_at}}"
+  }
+}
