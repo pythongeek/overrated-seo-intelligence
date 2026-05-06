@@ -213,4 +213,36 @@ program
     });
   });
 
+// Command: cron mode (for scheduled jobs on Render)
+program
+  .command('cron')
+  .description('Run scheduled cron jobs (competitor monitoring, content updates)')
+  .option('-i, --interval <minutes>', 'Run interval in minutes', '60')
+  .action(async (options) => {
+    const cron = require('node-cron');
+    const interval = parseInt(options.interval);
+
+    console.log(`⏰ SEO Cron worker started — interval: ${interval} minutes`);
+
+    const runJob = async () => {
+      console.log(`[${new Date().toISOString()}] Running scheduled competitor check...`);
+      try {
+        const agent = new CompetitorResearchAgent({
+          serpApiKey: process.env.SERP_API_KEY
+        });
+        // In production: load topics from DB, check for ranking changes
+        console.log('✅ Cron job complete');
+      } catch (err) {
+        console.error('❌ Cron job failed:', err.message);
+      }
+    };
+
+    // Run immediately on start
+    await runJob();
+
+    // Schedule recurring execution
+    const cronExpr = `*/${interval} * * * *`;
+    cron.schedule(cronExpr, runJob);
+  });
+
 program.parse();

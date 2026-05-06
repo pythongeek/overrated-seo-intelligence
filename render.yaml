@@ -1,0 +1,76 @@
+# Render Blueprint for SEO Intelligence Suite
+# https://render.com/docs/blueprint-spec
+
+services:
+  # ============================================
+  # Web Service - API Server
+  # ============================================
+  - type: web
+    name: seo-agent
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node cli/seo-agent.js server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SERP_API_KEY
+        sync: false
+      - key: REDIS_URL
+        fromDatabase:
+          color: red
+          name: seo-redis
+          endpoint: /v2/redises
+      - key: DATABASE_URL
+        fromDatabase:
+          color: yellow
+          name: seo-postgres
+          endpoint: /v2/databases
+      - key: N8N_WEBHOOK_URL
+        sync: false
+
+  # ============================================
+  # Background Worker - Cron Jobs
+  # ============================================
+  - type: worker
+    name: seo-cron
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node cli/seo-agent.js cron
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          color: yellow
+          name: seo-postgres
+          endpoint: /v2/databases
+      - key: REDIS_URL
+        fromDatabase:
+          color: red
+          name: seo-redis
+          endpoint: /v2/redises
+
+  # ============================================
+  # Managed Databases
+  # ============================================
+  - type: redis
+    name: seo-redis
+    plan: free
+    ipAllowList: [] # Allow all connections from Render services
+
+  - type: postgres
+    name: seo-postgres
+    plan: free
+    databaseName: seo_intelligence
+    ipAllowList: [] # Allow all connections from Render services
